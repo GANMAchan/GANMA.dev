@@ -2,11 +2,11 @@ services:
   app:
     build:
       context: .
-    tty: true
-    volumes:
-      - .:/app
-    environment:
-      - WATCHPACK_POLLING=true
+    # tty: true
+    # volumes:
+    #   - .:/app
+    # environment:
+    #   - WATCHPACK_POLLING=true
     command: sh -c "yarn dev"
     ports:
       - "3000:3000"
